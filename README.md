@@ -1,45 +1,52 @@
-**!! Atenção: Renomeie o seu repositório para (Tema)_(NomeDoProjeto). !!** 
-
-Temas:
- - Grafos1
- - Grafos2
- - PD
- - D&C
- - Greed
- - Final 
- 
- **!! *Não coloque os nomes dos alunos no título do repositório*. Exemplo de título correto: Grafos2_Labirinto-do-Minotauro !!**
- 
- (Apague essa seção)
-
-# NomedoProjeto
+# Questões - Juíz Online
 
 **Número da Lista**: X<br>
-**Conteúdo da Disciplina**: XXXXXXXXXX<br>
+**Conteúdo da Disciplina**: Grafos 1<br>
 
 ## Alunos
-|Matrícula | Aluno |
-| -- | -- |
-| xx/xxxxxx  |  xxxx xxxx xxxxx |
-| xx/xxxxxx  |  xxxx xxxx xxxxx |
 
-## Sobre 
-Descreva os objetivos do seu projeto e como ele funciona. 
+| Matrícula  | Aluno                               |
+| ---------- | ----------------------------------- |
+| 21/1030649 | Yan Werlley de Freitas Paulo |
+| 21/1030881 | Samuel Gomes de Souza         |
+
+## Apresentação
+A apresentação pode ser vista em: 
+## Sobre
+
+Este projeto consiste na realização de exercícios da plataforma de juiz online LeetCode. São desenvolvidos problemas Difícil e Média
+complexidade sobre grafos.
 
 ## Screenshots
-Adicione 3 ou mais screenshots do projeto em funcionamento.
 
-## Instalação 
-**Linguagem**: xxxxxx<br>
-**Framework**: (caso exista)<br>
-Descreva os pré-requisitos para rodar o seu projeto e os comandos necessários.
+#### Exercício 01 - Longest Increasing Path in a Matrix
 
-## Uso 
-Explique como usar seu projeto caso haja algum passo a passo após o comando de execução.
+Dificuldade: Difícil <br>
+Descrição do Problema: [Find All People With Secret](https://leetcode.com/problems/find-all-people-with-secret/description/)<br>
+Solução:
 
-## Outros 
+
+#### Exercício 02 -
+
+Dificuldade: <br>
+Descrição do Problema: <br>
+Solução: 
+
+
+#### Exercício 03 -
+
+Dificuldade: <br>
+Descrição do Problema: <br>
+Solução: 
+
+## Instalação
+
+**Linguagem**: <br>
+
+## Uso
+
+<!--## Outros
+
 Quaisquer outras informações sobre seu projeto podem ser descritas abaixo.
 
-
-
-
+-->
