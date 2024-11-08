@@ -1,52 +1,36 @@
-from collections import defaultdict
+from collections import defaultdict, deque
 
 class Solution:
     def findAllPeople(self, n, meetings, firstPerson):
-        # Inicializar as pessoas que sabem o segredo
         knows_secret = {0, firstPerson}
         
-        # Agrupar reuniões por tempo e ordenar
-        meetings.sort(key=lambda x: x[2])
+        # Agrupa reuniões por tempo
+        meetings_by_time = defaultdict(list)
+        for x, y, time in meetings:
+            meetings_by_time[time].append((x, y))
         
-        i = 0
-        while i < len(meetings):
-            time = meetings[i][2]
-            group = defaultdict(list)
-            j = i
+        # Ordena as chaves de tempo
+        for time in sorted(meetings_by_time.keys()):
+            connections = defaultdict(list)
             
-            # Agrupar todas as reuniões no mesmo tempo
-            while j < len(meetings) and meetings[j][2] == time:
-                x, y, _ = meetings[j]
-                group[x].append(y)
-                group[y].append(x)
-                j += 1
+            # Grafo de conexões para o tempo atual
+            for x, y in meetings_by_time[time]:
+                connections[x].append(y)
+                connections[y].append(x)
             
-            # Usar Union Find para determinar os grupos que sabem o segredo
-            parent = {p: p for p in group}
+            # Participantes no tempo atual que sabem o segredo
+            queue = deque([p for p in connections if p in knows_secret])
+            seen = set(queue)
             
-            def find(x):
-                if parent[x] != x:
-                    parent[x] = find(parent[x])
-                return parent[x]
+            # BFS para propagar o segredo para todos conectados
+            while queue:
+                person = queue.popleft()
+                for neighbor in connections[person]:
+                    if neighbor not in seen:
+                        seen.add(neighbor)
+                        queue.append(neighbor)
             
-            def union(x, y):
-                parent[find(x)] = find(y)
-            
-            # Conectar todos os participantes
-            for p1 in group:
-                for p2 in group[p1]:
-                    union(p1, p2)
-            
-            # Propagar o segredo
-            secret_group = set()
-            for p in group:
-                if p in knows_secret:
-                    secret_group.add(find(p))
-            
-            for p in group:
-                if find(p) in secret_group:
-                    knows_secret.add(p)
-            
-            i = j
+            # Atualiza as pessoas que sabem o segredo
+            knows_secret.update(seen)
         
         return list(knows_secret)
