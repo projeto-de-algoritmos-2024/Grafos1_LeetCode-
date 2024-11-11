@@ -23,15 +23,13 @@ complexidade sobre grafos.
 
 Dificuldade: Difícil <br>
 Descrição do Problema: [Find All People With Secret](https://leetcode.com/problems/find-all-people-with-secret/description/)<br>
-Solução:
-
+Solução: ![2092](./prints/2092.png)
 
 #### Exercício 02 -
 
 Dificuldade: Difícil<br>
 Descrição do Problema: [Process Restricted Friend Requests](https://leetcode.com/problems/process-restricted-friend-requests/description/)<br>
-Solução: 
-
+Solução: ![2076](./prints/2076.png)
 
 #### Exercício 03 -
 
