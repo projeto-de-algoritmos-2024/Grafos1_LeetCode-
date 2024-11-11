@@ -37,7 +37,7 @@ Solução:
 
 Dificuldade: Difícil <br>
 Descrição do Problema: [Minimum Cost to Reach Destination in Time](https://leetcode.com/problems/minimum-cost-to-reach-destination-in-time/description/)<br>
-Solução: 
+Solução: ![image](./prints/1928.png)
 
 ## Instalação
 
