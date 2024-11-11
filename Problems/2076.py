@@ -1,44 +1,47 @@
-from collections import deque, defaultdict
+from typing import List
 
 class Solution:
-    def friendRequests(self, n, restrictions, requests):
-        # representa amizades
-        friends = defaultdict(list)
-        result = []
-        
-        # verifica se duas pessoas estão indiretamente conectadas
-        def violates_restriction(u, v):
-            queue = deque([u])
-            visited = set([u])
-            
-            # Faz BFS para ver conexões
-            while queue:
-                current = queue.popleft()
-                
-                if current == v:
-                    return True
-                
-                for friend in friends[current]:
-                    if friend not in visited:
-                        visited.add(friend)
-                        queue.append(friend)
-            return False
+    def friendRequests(self, n: int, restrictions: List[List[int]], requests: List[List[int]]) -> List[bool]:
+        parent = list(range(n))
+        rank = [0] * n
 
+        def find(x):
+            if parent[x] != x:
+                parent[x] = find(parent[x])
+            return parent[x]
+
+        # Une dois conjuntos
+        def union(x, y):
+            rootX, rootY = find(x), find(y)
+            if rootX != rootY:
+                # Une baseado no rank para otimização
+                if rank[rootX] > rank[rootY]:
+                    parent[rootY] = rootX
+                elif rank[rootX] < rank[rootY]:
+                    parent[rootX] = rootY
+                else:
+                    parent[rootY] = rootX
+                    rank[rootX] += 1
+
+        result = []
+
+        # Processa cada solicitação de amizade
         for u, v in requests:
-            can_be_friends = True
+            rootU, rootV = find(u), find(v)
+            canBeFriends = True
+
+            # Verifica se essa solicitação viola alguma restrição
             for x, y in restrictions:
-                # restrições
-                if (violates_restriction(u, x) and violates_restriction(v, y)) or \
-                   (violates_restriction(u, y) and violates_restriction(v, x)):
-                    can_be_friends = False
+                rootX, rootY = find(x), find(y)
+                if (rootU == rootX and rootV == rootY) or (rootU == rootY and rootV == rootX):
+                    canBeFriends = False
                     break
 
-            # Adiciona a amizade se não há violação de restrição
-            if can_be_friends:
-                friends[u].append(v)
-                friends[v].append(u)
+            # Se a solicitação for válida, une os conjuntos de u e v
+            if canBeFriends:
+                union(u, v)
                 result.append(True)
             else:
                 result.append(False)
-                
+
         return result
