@@ -35,8 +35,8 @@ Solução:
 
 #### Exercício 03 -
 
-Dificuldade: <br>
-Descrição do Problema: <br>
+Dificuldade: Difícil <br>
+Descrição do Problema: [Minimum Cost to Reach Destination in Time](https://leetcode.com/problems/minimum-cost-to-reach-destination-in-time/description/)<br>
 Solução: 
 
 ## Instalação
