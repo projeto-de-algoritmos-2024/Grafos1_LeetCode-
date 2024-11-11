@@ -28,8 +28,8 @@ Solução:
 
 #### Exercício 02 -
 
-Dificuldade: <br>
-Descrição do Problema: <br>
+Dificuldade: Difícil<br>
+Descrição do Problema: [Process Restricted Friend Requests](https://leetcode.com/problems/process-restricted-friend-requests/description/)<br>
 Solução: 
 
 
@@ -41,7 +41,7 @@ Solução:
 
 ## Instalação
 
-**Linguagem**: <br>
+**Linguagem**: Python <br>
 
 ## Uso
 
