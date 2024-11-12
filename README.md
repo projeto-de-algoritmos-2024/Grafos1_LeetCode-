@@ -1,6 +1,6 @@
 # Questões - Juíz Online
 
-**Número da Lista**: X<br>
+**Número da Lista**: 01<br>
 **Conteúdo da Disciplina**: Grafos 1<br>
 
 ## Alunos
@@ -11,7 +11,9 @@
 | 21/1030881 | Samuel Gomes de Souza         |
 
 ## Apresentação
-A apresentação pode ser vista em: 
+
+A apresentação pode ser vista [aqui](https://www.youtube.com/watch?v=egHqd4GtLUg).
+
 ## Sobre
 
 Este projeto consiste na realização de exercícios da plataforma de juiz online LeetCode. São desenvolvidos problemas Difícil e Média
@@ -43,6 +45,7 @@ Solução: ![1928](./prints/1928.png)
 
 ## Uso
 
+Para executar os códigos, é recomendado clicar no link do problema que direciona para o LeetCode e rodar o código diretamente na plataforma.
 <!--## Outros
 
 Quaisquer outras informações sobre seu projeto podem ser descritas abaixo.
