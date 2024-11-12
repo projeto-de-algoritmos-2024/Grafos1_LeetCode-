@@ -11,7 +11,9 @@
 | 21/1030881 | Samuel Gomes de Souza         |
 
 ## Apresentação
-A apresentação pode ser vista em: 
+
+A apresentação pode ser vista [aqui](https://www.youtube.com/watch?v=egHqd4GtLUg).
+
 ## Sobre
 
 Este projeto consiste na realização de exercícios da plataforma de juiz online LeetCode. São desenvolvidos problemas Difícil e Média
