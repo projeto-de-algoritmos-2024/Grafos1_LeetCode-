@@ -43,6 +43,7 @@ Solução: ![image](./prints/1928.png)
 
 ## Uso
 
+Para executar os códigos, é recomendado clicar no link do problema que direciona para o LeetCode e rodar o código diretamente na plataforma.
 <!--## Outros
 
 Quaisquer outras informações sobre seu projeto podem ser descritas abaixo.
