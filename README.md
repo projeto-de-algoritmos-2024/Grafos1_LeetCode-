@@ -19,23 +19,23 @@ complexidade sobre grafos.
 
 ## Screenshots
 
-#### Exercício 01 - Longest Increasing Path in a Matrix
+#### Exercício 01 - (2092)Find All People With Secret
 
 Dificuldade: Difícil <br>
 Descrição do Problema: [Find All People With Secret](https://leetcode.com/problems/find-all-people-with-secret/description/)<br>
 Solução: ![2092](./prints/2092.png)
 
-#### Exercício 02 -
+#### Exercício 02 - (2076)Process Restricted Friend Requests
 
 Dificuldade: Difícil<br>
 Descrição do Problema: [Process Restricted Friend Requests](https://leetcode.com/problems/process-restricted-friend-requests/description/)<br>
 Solução: ![2076](./prints/2076.png)
 
-#### Exercício 03 -
+#### Exercício 03 - (1928)Minimum Cost to Reach Destination in Time
 
 Dificuldade: Difícil <br>
 Descrição do Problema: [Minimum Cost to Reach Destination in Time](https://leetcode.com/problems/minimum-cost-to-reach-destination-in-time/description/)<br>
-Solução: ![image](./prints/1928.png)
+Solução: ![1928](./prints/1928.png)
 
 ## Instalação
 
